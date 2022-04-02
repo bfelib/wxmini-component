@@ -1,0 +1,44 @@
+{
+  "name": "mini-extends",
+  "version": "1.0.0",
+  "description": "Mini Program Components Extends",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "https://github.com/haiweilian",
+  "scripts": {
+    "dev": "gulp",
+    "prepare": "husky install",
+    "commit": "npx git-cz",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [
+    "mini",
+    "components"
+  ],
+  "bugs": {
+    "url": "https://github.com/haiweilian/mini-extends/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haiweilian/mini-extends.git"
+  },
+  "devDependencies": {
+    "@bfehub/eslint-config-basic": "^1.2.0",
+    "@bfehub/stylelint-config-basic": "^1.2.0",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.12.0",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.3",
+    "gulp-sass": "^5.1.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.1",
+    "stylelint": "^14.6.1",
+    "vuepress": "^1.9.7"
+  }
+}
