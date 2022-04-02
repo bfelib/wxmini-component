@@ -5,6 +5,13 @@ Page({
   data: {},
 
   /**
+   * 点击返回按钮事件
+   */
+  click(e) {
+    console.log(e)
+  },
+
+  /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {},

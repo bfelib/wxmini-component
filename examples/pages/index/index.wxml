@@ -1,1 +1,6 @@
-<view></view>
+<view class="demo">
+  <view class="demo-group">
+    <navigator url="/pages/demo/backtop/index" class="demo-block">BackTop 返回顶部 </navigator>
+    <navigator url="/pages/demo/driver/index" class="demo-block">Driver 步骤引导 </navigator>
+  </view>
+</view>

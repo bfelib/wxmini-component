@@ -1,0 +1,23 @@
+.demo {
+  padding: 20rpx 40rpx;
+}
+
+.demo-title {
+  margin: 24px 0 8px 16px;
+  font-size: 14px;
+  color: rgb(69 90 100 / 60%);
+}
+
+.demo-block {
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #323233;
+  background: #f7f8fa;
+  border-radius: 99px;
+  transition: background 0.3s;
+}

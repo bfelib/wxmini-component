@@ -1,0 +1,18 @@
+.backtop {
+  position: fixed;
+  display: none;
+}
+
+.backtop.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+}
