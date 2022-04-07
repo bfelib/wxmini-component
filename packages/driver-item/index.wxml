@@ -1,3 +1,3 @@
-<view class="{{ className }}">
+<view class="driver-item {{ className }} {{ customClass }}" style="{{ customStyle }}">
   <slot></slot>
 </view>

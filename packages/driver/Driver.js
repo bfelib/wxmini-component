@@ -135,6 +135,9 @@ export default class Driver {
    * @private
    */
   showHighlightElement(element) {
+    // 清除上一个的元素状态
+    this.currentElement && this.currentElement.hide()
+
     // 显示元素层
     element.show()
 

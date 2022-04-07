@@ -1,0 +1,4 @@
+.custom-class {
+  width: 350rpx;
+  margin-left: 200rpx;
+}

@@ -24,8 +24,8 @@
   <me-driver id="driver"></me-driver>
 
   <!-- 单个步骤包裹内容 -->
-  <me-driver-item id="step-1">
-    <view style="margin-top:200px;">
+  <me-driver-item id="step-1" custom-class="custom-class" custom-style="margin-top:200px;">
+    <view>
       内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
     </view>
   </me-driver-item>
@@ -43,11 +43,9 @@
   </me-driver-item>
 
   <!-- 单个步骤包裹内容 -->
-  <view style="width:200px; margin:50px 20px;">
-    <me-driver-item id="step-4">
-      <input bind:tap="startInput" style="height:50px; border:1px solid #ccc;" placeholder="输入内容" />
-    </me-driver-item>
-  </view>
+  <me-driver-item id="step-4" custom-style="width:200px; margin:50px 20px;">
+    <input bind:tap="startInput" style="height:50px; border:1px solid #ccc;" placeholder="输入内容" />
+  </me-driver-item>
 </view>
 ```
 

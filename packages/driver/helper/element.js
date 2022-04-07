@@ -38,7 +38,7 @@ export default class Element {
   getCalculatedPosition() {
     return new Promise((resolve) => {
       Promise.all([
-        getRect(this.context, this.options.element),
+        getRect(this.node, '.driver-item'),
         getViewportRect(this.context, this.options.element),
         getViewportScroll(this.context, this.options.element),
       ]).then(([rect, viewRect, viewScroll]) => {

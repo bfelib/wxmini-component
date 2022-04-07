@@ -19,6 +19,7 @@ export default class Stage {
         height: `${elementRect.height}px`,
         top: `${elementRect.top + elementRect.scrollTop}px`,
         left: `${elementRect.left}px`,
+        background: this.options.stageBackground,
       },
     })
   }
