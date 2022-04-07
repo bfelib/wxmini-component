@@ -1,1 +1,27 @@
-<view>driver</view>
+<view>
+  <button bind:tap="start" type="primary">开始</button>
+
+  <me-driver id="driver"></me-driver>
+
+  <me-driver-item id="step-1">
+    <view style="margin-top:200px;">
+      内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+    </view>
+  </me-driver-item>
+
+  <me-driver-item id="step-2">
+    <view style="margin-top:200px;">
+      内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+    </view>
+  </me-driver-item>
+
+  <me-driver-item id="step-3">
+    <view style="margin-top:200px;">内容内容内容内容内容内容</view>
+  </me-driver-item>
+
+  <view style="width:200px; margin:50px 20px;">
+    <me-driver-item id="step-4">
+      <input bind:tap="startInput" style="height:50px; border:1px solid #ccc;" placeholder="输入内容" />
+    </me-driver-item>
+  </view>
+</view>

@@ -1,0 +1,153 @@
+/*
+ * 背景遮盖层
+ */
+.driver-page-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100002;
+  display: none;
+  width: 100%;
+  height: 100%;
+  zoom: 1;
+  background: #000;
+  opacity: 0.75;
+  transition: all 0.3s;
+}
+
+/*
+ * 元素高亮裁剪部分
+ */
+.driver-highlighted-element-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100003 !important;
+  display: none;
+  width: 0;
+  height: 0;
+  background: #fff;
+  border-radius: 4rpx;
+  transition: all 0.3s;
+}
+
+/*
+ * 提示信息层
+ */
+.driver-popover-item {
+  position: absolute;
+  left: 7%;
+  z-index: 1000000000 !important;
+  box-sizing: border-box;
+  display: none;
+  width: 86%;
+  padding: 30rpx;
+  margin: 0;
+  color: #2d2d2d;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 40%);
+}
+
+/*
+ * 提示三角箭头定位
+ */
+.driver-popover-tip {
+  position: absolute;
+  content: '';
+  border: 5px solid #fff;
+}
+
+.driver-popover-tip.top {
+  top: -10px;
+  left: 0rpx;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #fff;
+  /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+  border-left-color: transparent;
+}
+
+.driver-popover-tip.bottom {
+  bottom: -10px;
+  left: 0rpx;
+  border-top-color: #fff;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+  border-left-color: transparent;
+}
+
+/*
+ * 提示按钮组样式
+ */
+.driver-popover-footer {
+  display: block;
+  margin-top: 20rpx;
+}
+
+.driver-popover-footer .driver-button {
+  display: inline-block;
+  padding: 10rpx 30rpx;
+  font-size: 22rpx;
+  line-height: 1.3;
+  color: #2d2d2d;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  cursor: pointer;
+  zoom: 1;
+  background-color: #f1f1f1;
+  border: 1px solid #d4d4d4;
+  border-radius: 4rpx;
+  outline: 0;
+}
+
+.driver-popover-footer .driver-button + .driver-button {
+  margin-left: 20rpx;
+}
+
+.driver-popover-footer .driver-button.driver-disabled {
+  color: #808080;
+  pointer-events: none;
+  cursor: default;
+}
+
+.driver-popover-footer .driver-close-btn {
+  float: left;
+}
+
+.driver-popover-footer .driver-close-only-btn {
+  float: right;
+}
+
+.driver-popover-footer .driver-btn-group {
+  float: right;
+}
+
+/*
+ * 提示标题样式
+ */
+.driver-popover-title {
+  position: relative;
+  display: block;
+  margin: 0 0 10rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+  line-height: 1.5;
+  zoom: 1;
+}
+
+/*
+ * 提示描述样式
+ */
+.driver-popover-description {
+  display: block;
+  margin-bottom: 0;
+  font-size: 28rpx;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #2d2d2d;
+  zoom: 1;
+}

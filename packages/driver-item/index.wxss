@@ -1,0 +1,7 @@
+.driver-highlighted-element {
+  z-index: 100004 !important;
+}
+
+.driver-position-relative {
+  position: relative !important;
+}

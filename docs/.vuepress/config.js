@@ -12,7 +12,7 @@ module.exports = {
         title: '组件',
         path: '/components/',
         collapsable: false,
-        children: ['/components/backtop', '/components/driver'],
+        children: ['/components/backtop/backtop', '/components/driver/driver'],
       },
     ],
   },

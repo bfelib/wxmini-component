@@ -9,5 +9,6 @@ module.exports = {
     App: false,
     wx: false,
     Behavior: false,
+    getRegExp: false,
   },
 }

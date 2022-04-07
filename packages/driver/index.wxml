@@ -1,3 +1,19 @@
-<view>
-  Driver
+<wxs src="./utils.wxs" module="utils" />
+<view class="driver-page-overlay" bind:tap="clickOverlay" style="{{ utils.style(overlayStyle) }}"></view>
+<view class="driver-highlighted-element-stage" style="{{ utils.style(stageStyle) }}"></view>
+<view class="driver-popover-item {{ popoverOptions.className }}" style="{{ utils.style(popoverStyle) }}">
+  <view class="driver-popover-tip {{ popoverTipClass }}" style="{{ utils.style(popoverTipStyle) }}"></view>
+  <view class="driver-popover-title">{{ popoverOptions.title }}</view>
+  <view class="driver-popover-description">{{ popoverOptions.description }}</view>
+  <view class="driver-popover-footer" wx:if="{{ popoverOptions.showButtons }}">
+    <view bind:tap="close" class="driver-button driver-close-btn">{{ popoverOptions.closeBtnText }}</view>
+    <span class="driver-btn-group">
+      <view bind:tap="movePrevious" class="driver-button driver-prev-btn {{ popoverOptions.isFirst ? 'driver-disabled' : '' }}">
+        {{ popoverOptions.prevBtnText }}
+      </view>
+      <view bind:tap="moveNext" class="driver-button driver-next-btn">
+        {{ popoverOptions.isLast ? popoverOptions.doneBtnText : popoverOptions.nextBtnText }}
+      </view>
+    </span>
+  </view>
 </view>

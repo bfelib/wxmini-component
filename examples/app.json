@@ -14,6 +14,7 @@
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "me-backtop": "./dist/backtop/index",
-    "me-driver": "./dist/backtop/index"
+    "me-driver": "./dist/driver/index",
+    "me-driver-item": "./dist/driver-item/index"
   }
 }
