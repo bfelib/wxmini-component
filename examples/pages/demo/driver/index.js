@@ -36,6 +36,34 @@ Page({
           description: '描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述',
         },
       },
+      {
+        element: '#step-4',
+        popover: {
+          title: '标题 4',
+          description: '描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述',
+        },
+      },
+      {
+        element: '#step-5',
+        popover: {
+          title: '标题 5',
+          description: '描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述',
+        },
+      },
+      {
+        element: '#step-6',
+        popover: {
+          title: '标题 6',
+          description: '描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述',
+        },
+      },
+      {
+        element: '#step-7',
+        popover: {
+          title: '标题 7',
+          description: '描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述',
+        },
+      },
     ])
 
     driver.start()
@@ -44,7 +72,7 @@ Page({
     const driver = this.data.driver
 
     driver.highlight({
-      element: '#step-4',
+      element: '#step-input',
       popover: {
         title: '标题 4',
         description: '描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述',

@@ -146,30 +146,38 @@ export default class Driver {
 
     nextTick(() => {
       element.getCalculatedPosition().then((rect) => {
+        // 预留空白位置
+        const padding = (rect.viewHeight - rect.height) / 4
+
         // 如果不全在可视范围内，把元素层滚动到可视区域居中位置
         if (rect.bottom > rect.viewHeight) {
-          scrollIntoView(null, element.options.element)
+          scrollIntoView(null, rect.bottom + rect.scrollTop - padding)
+        } else if (rect.top <= 0) {
+          scrollIntoView(null, rect.top + rect.scrollTop - padding)
         }
 
-        // 根据元素层的位置信息移动到遮罩层和裁剪层
-        element.stage && element.stage.show(rect)
-        element.overlay && element.overlay.show(rect)
+        // 由于元素发生了移动重新获取位置
+        element.getCalculatedPosition().then((rect) => {
+          // 根据元素层的位置信息移动到遮罩层和裁剪层
+          element.stage && element.stage.show(rect)
+          element.overlay && element.overlay.show(rect)
 
-        // 当移动动画执行完毕后再显示提示层，第一次加载不延迟
-        if (this.currentElement) {
-          setTimeout(() => {
+          // 当移动动画执行完毕后再显示提示层，第一次加载不延迟
+          if (this.currentElement) {
+            setTimeout(() => {
+              element.popover && element.popover.show(rect)
+            }, 300)
+          } else {
             element.popover && element.popover.show(rect)
-          }, 300)
-        } else {
-          element.popover && element.popover.show(rect)
-        }
+          }
 
-        this.currentElement = element
+          this.currentElement = element
 
-        // dispath onHighlighted event
-        if (this.currentElement && this.currentElement.options.onHighlighted) {
-          this.currentElement.options.onHighlighted(this.currentElement)
-        }
+          // dispath onHighlighted event
+          if (this.currentElement && this.currentElement.options.onHighlighted) {
+            this.currentElement.options.onHighlighted(this.currentElement)
+          }
+        })
       })
     })
   }

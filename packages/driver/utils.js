@@ -54,9 +54,9 @@ export function getViewportScroll(context, selector) {
 }
 
 // TODO: scroll-view support
-export function scrollIntoView(context, selector) {
+export function scrollIntoView(context, scrollTop) {
   wx.pageScrollTo({
-    selector,
+    scrollTop,
     duration: 0,
   })
 }
