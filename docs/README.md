@@ -7,9 +7,10 @@ heroText: Mini Extends
 
 tagline: 扩展组件库不包含的组件和业务组件
 
-actionText: 快速上手 →
-
-actionLink: /components/
+actions:
+  - text: 快速上手 →
+    link: /components/
+    type: primary
 
 features:
   - title: 简洁至上
