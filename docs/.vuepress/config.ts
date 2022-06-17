@@ -2,14 +2,14 @@ import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from '@vuepress/theme-default'
 
 export default defineUserConfig<DefaultThemeOptions>({
-  base: '/mini-extends/',
+  base: '/wxmini-component/',
   title: 'Mini Extends',
   description: 'Mini Program Components Extends',
   themeConfig: {
-    repo: 'haiweilian/mini-extends',
+    repo: 'bfelib/wxmini-component',
     nav: [
       { text: '组件', link: '/components/' },
-      { text: 'GitHub', link: 'https://github.com/haiweilian/mini-extends' },
+      { text: 'GitHub', link: 'https://github.com/bfelib/wxmini-component' },
     ],
     sidebar: [
       {

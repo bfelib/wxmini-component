@@ -1,5 +1,5 @@
 {
-  "name": "mini-extends",
+  "name": "wxmini-component",
   "version": "1.0.0",
   "description": "Mini Program Components Extends",
   "main": "index.js",
@@ -17,11 +17,11 @@
     "components"
   ],
   "bugs": {
-    "url": "https://github.com/haiweilian/mini-extends/issues"
+    "url": "https://github.com/bfelib/wxmini-component/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/haiweilian/mini-extends.git"
+    "url": "https://github.com/bfelib/wxmini-component.git"
   },
   "devDependencies": {
     "@bfehub/eslint-config-basic": "^1.2.0",
